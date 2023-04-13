@@ -74,3 +74,28 @@ $ git clone https://github.com/blockpane/govstat
 $ cd govstat
 $ go install ./...
 ```
+
+
+## Edit discord.py
+
+```
+# Replace this with the path to your govstat binary
+govstat_binary_path = "./govstat"
+
+# Replace this with your Discord webhook URL
+webhook_url = "https://discord.com/api/webhooks/your-webhook-id/your-webhook-token"
+```
+## Run
+```bash
+$ python3 discord.py
+```
+
+## Cronjob
+
+```bash
+$ crontab -e
+```
+
+```bash
+0 0 * * * /usr/bin/python3 /home/$USER/govstat/discord.py
+```
