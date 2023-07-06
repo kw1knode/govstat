@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+
+  govstat:
+    image: kw1k/govstat:latest
+    container_name: govstat
+    volumes:
+      - ./chains.yml:/govstat/chains.yml
+    environment:
+      - DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/your-webhook-id/your-webhook-token
+      - SLEEP_TIME=43200 #IN SECONDS
+    restart: unless-stopped
