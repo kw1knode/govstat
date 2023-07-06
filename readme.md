@@ -67,6 +67,20 @@ $ govstat
 
 ```
 
+## Docker
+`Edit chains.yml`
+
+`Adjust environment variables in docker-compose.yml`
+```bash
+- DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/your-webhook-id/your-webhook-token
+- SLEEP_TIME=43200 #IN SECONDS
+```
+
+```bash
+docker-compose up -d
+```
+
+
 ## Installation
 
 ```bash
