@@ -68,9 +68,26 @@ $ govstat
 ```
 
 ## Docker
-`Edit chains.yml`
+Edit chains.yml
 
-`Adjust environment variables in docker-compose.yml`
+```bash
+---
+
+# update the following with your own chain IDs, RPC endpoint, and validator addresses
+# repeat as needed for each chain you want to monitor
+
+chains:
+  - chain_id: "akashnet-2"
+    validator: "archway1809mz86cnxuk6f3pusglthszgxh5k9wv0vvlyj"
+    node: "http://somehost:26657"
+  - chain_id: "injective-1"
+    validator: "inj1zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+    node: "http://someotherhost:26657"
+```
+
+
+Adjust environment variables in docker-compose.yml
+
 ```bash
 - DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/your-webhook-id/your-webhook-token
 - SLEEP_TIME=43200 #IN SECONDS
