@@ -78,7 +78,7 @@ Edit chains.yml
 
 chains:
   - chain_id: "akashnet-2"
-    validator: "archway1809mz86cnxuk6f3pusglthszgxh5k9wv0vvlyj"
+    validator: "akash1zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
     node: "http://somehost:26657"
   - chain_id: "injective-1"
     validator: "inj1zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
