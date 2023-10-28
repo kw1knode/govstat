@@ -3,7 +3,7 @@ version: '3.8'
 services:
 
   govstat:
-    image: kw1k/govstat:latest
+    image: kw1k/govstat:v2
     container_name: govstat
     volumes:
       - ./chains.yml:/govstat/chains.yml
